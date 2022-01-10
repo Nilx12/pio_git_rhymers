@@ -6,7 +6,7 @@ public class DefaultCountingOutRhymer {
     public static final int NUMBER_OF_NUMBERS = 12;
     public static final int RETURN_ERROR_VALUE = -1;
 
-    private int[] numbers = new int[NUMBER_OF_NUMBERS];
+    private final int[] numbers = new int[NUMBER_OF_NUMBERS];
     public int total = INITIAL_TOTAL;
 
     public void countIn(int in) {
