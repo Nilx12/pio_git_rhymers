@@ -8,6 +8,18 @@ public class DefaultCountingOutRhymer {
 
     private final int[] NUMBERS = new int[NUMBER_OF_NUMBERS];
 
+    public static int getInitialTotal() {
+        return INITIAL_TOTAL;
+    }
+
+    public static int getNumberOfNumbers() {
+        return NUMBER_OF_NUMBERS;
+    }
+
+    public static int getReturnErrorValue() {
+        return RETURN_ERROR_VALUE;
+    }
+
     public int getTotal() {
         return total;
     }
@@ -39,4 +51,11 @@ public class DefaultCountingOutRhymer {
         return NUMBERS[total--];
     }
 
+    public int[] getNUMBERS() {
+        return NUMBERS;
+    }
+
+    public void setTotal(int total) {
+        this.total = total;
+    }
 }

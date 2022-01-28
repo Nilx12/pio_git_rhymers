@@ -16,6 +16,14 @@ public class HanoiRhymer extends DefaultCountingOutRhymer {
 		else
 			super.countIn(in);
 		}
+
+	public int getTotalRejected() {
+		return totalRejected;
+	}
+
+	public void setTotalRejected(int totalRejected) {
+		this.totalRejected = totalRejected;
+	}
 }
 // bledne wiersze 5,12,15,16
 // kombinacje klawiszy alt ze strzałkami to przesuwanie się po otwartych kartach projektu
