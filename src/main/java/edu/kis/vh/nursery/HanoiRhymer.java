@@ -2,8 +2,8 @@ package edu.kis.vh.nursery;
 
 public class HanoiRhymer extends DefaultCountingOutRhymer {
 
-	public static final int INITIAL_REJECTED = 0;
-	int totalRejected = INITIAL_REJECTED;
+	private static final int INITIAL_REJECTED = 0;
+	private int totalRejected = INITIAL_REJECTED;
 
 	public int reportRejected() {
 		return totalRejected;
@@ -16,6 +16,11 @@ public class HanoiRhymer extends DefaultCountingOutRhymer {
 		else
 			super.countIn(in);
 		}
+
+	public int getTotalRejected() {
+		return totalRejected;
+	}
+
 }
 // bledne wiersze 5,12,15,16
 // kombinacje klawiszy alt ze strzałkami to przesuwanie się po otwartych kartach projektu

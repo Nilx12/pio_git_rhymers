@@ -2,12 +2,29 @@ package edu.kis.vh.nursery;
 
 public class DefaultCountingOutRhymer {
 
-    public static final int INITIAL_TOTAL = -1;
-    public static final int NUMBER_OF_NUMBERS = 12;
-    public static final int RETURN_ERROR_VALUE = -1;
+    private static final int INITIAL_TOTAL = -1;
+    private static final int NUMBER_OF_NUMBERS = 12;
+    private static final int RETURN_ERROR_VALUE = -1;
 
     private final int[] NUMBERS = new int[NUMBER_OF_NUMBERS];
-    public int total = INITIAL_TOTAL;
+
+    public static int getInitialTotal() {
+        return INITIAL_TOTAL;
+    }
+
+    public static int getNumberOfNumbers() {
+        return NUMBER_OF_NUMBERS;
+    }
+
+    public static int getReturnErrorValue() {
+        return RETURN_ERROR_VALUE;
+    }
+
+    public int getTotal() {
+        return total;
+    }
+
+    private int total = INITIAL_TOTAL;
 
     public void countIn(int in) {
         if (!isFull())
@@ -32,6 +49,10 @@ public class DefaultCountingOutRhymer {
         if (callCheck())
             return RETURN_ERROR_VALUE;
         return NUMBERS[total--];
+    }
+
+    public int[] getNUMBERS() {
+        return NUMBERS;
     }
 
 }
